@@ -48,6 +48,22 @@ namespace CarGarage_WCCI
                 Speed += 5;
             }
         }
+
+        /// <summary>
+        /// Increasing the speed of our car by a rate the user provides
+        /// <example> car.Accelerate(10) Increases the car variable's speed by 10.</example>
+        /// </summary>
+        /// <param name="increase">The amount by which our speed will increase</param>
+        public void Accelerate(int increase)
+        {
+            if (Speed <= TopSpeed)
+            {
+                Speed += increase;
+            }
+        }
+        /// <summary>
+        /// Decreases our car's speed by 5.
+        /// </summary>
         public override void Brake()
         {
             if(Speed >= 5)
@@ -55,6 +71,7 @@ namespace CarGarage_WCCI
                 Speed -= 5;
             }
         }
+
         // what do we want to update every frames/timestep?
         public override void Tick()
         {

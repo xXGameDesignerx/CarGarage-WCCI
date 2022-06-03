@@ -59,5 +59,36 @@ namespace CarGarage_WCCI
         {
             IsDoorOpen = !IsDoorOpen;
         }
+        private void ternaryexample()
+        {
+            // cloning example
+            //Cars adenCar = davisCar;
+            //davisCar = new Cars();
+
+            // variable declaration
+            // type name;
+
+            // assignment/reassignment
+            // name = value;
+            bool isSunny = true;
+
+            // temperature with ternary statements
+            int temperature;
+
+            if (isSunny)
+            {
+                temperature = 90;
+            }
+            else
+            {
+                temperature = 60;
+            }
+            // ternary example
+            // type variable = condition ? ValT : ValF; - ternary statements simplify to a value, and could be used anywhere where a value is used
+            int ternaryTemp = isSunny ? 90 : 60;
+
+            Console.WriteLine(temperature);
+            Console.WriteLine(ternaryTemp);
+        }
     }
 }
